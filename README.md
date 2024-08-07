@@ -15,8 +15,11 @@ The recommanded IDE is Visual Studio Code. The training and inference of the dee
 
 ### S0 Clone
 ```bash
+sudo apt-get install git-lfs
+git lfs install
 git clone https://github.com/jsbyysheng/mutaSCAN.git
 cd mutaSCAN
+git lfs pull # recheck
 ```
 
 ### S1 Hardware
