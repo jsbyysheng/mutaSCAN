@@ -41,15 +41,15 @@ tar -zxvf model/weights.tar.gz -C model
 ```
 
 ## File Structure
-`0_sample_data.ipynb`, Device: Raspberry Pi 4B, Environment: system python3. This jupyter notebook can be used to sample data.
+`0_sample_data.ipynb`, **Device**: Raspberry Pi 4B, **Environment**: system python3. This jupyter notebook can be used to sample data.
 
-`1_preprocess.ipynb`, Device: Workstation, Environment: conda_env detectron2. This jupyter notebook can be used to preprocess sample data.
+`1_preprocess.ipynb`, **Device**: Workstation, **Environment**: conda_env detectron2. This jupyter notebook can be used to preprocess sample data.
 
-`2_convert_to_coco.ipynb`, Device: Workstation, Environment: conda_env detectron2. This jupyter notebook can be used to convert sample data, which has been preprocessed and labelled by [labelme](https://github.com/labelmeai/labelme), to coco dataset.
+`2_convert_to_coco.ipynb`, **Device**: Workstation, **Environment**: conda_env detectron2. This jupyter notebook can be used to convert sample data, which has been preprocessed and labelled by [labelme](https://github.com/labelmeai/labelme), to coco dataset.
 
-`3_deeplearning.ipynb`, Device: Workstation, Environment: conda_env detectron2. This jupyter notebook can be used to train model.
+`3_deeplearning.ipynb`, **Device**: Workstation, **Environment**: conda_env detectron2. This jupyter notebook can be used to train model.
 
-`inference_server.py`, Device: Raspberry Pi 4B, Environment: conda_env detectron2. This python script can be used to run inference server. You can execute `python inference_server.py` to start the server. To test the inference server, you can use this code:
+`inference_server.py`, **Device**: Raspberry Pi 4B, **Environment**: conda_env detectron2. This python script can be used to run inference server. You can execute `python inference_server.py` to start the server. To test the inference server, you can use this code:
 ```python
 import requests
 
